@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marcelo Studio
 
-## Getting Started
+NFT Marketplace mockup para fotografía artística de Marcelo.
 
-First, run the development server:
+## Descripción
+
+Plataforma de coleccionables digitales que presenta una colección exclusiva de fotografía artística como NFTs en la blockchain de Ethereum. Cada pieza es una edición única certificada con el estándar ERC-1155.
+
+## Características
+
+- **Galería NFT**: Grid de obras con vista detallada de cada pieza
+- **Simulación de Wallet**: Conexión de wallet mockup con dirección simulada
+- **Internacionalización**: Soporte completo para Español e Inglés
+- **Tema Claro/Oscuro**: Toggle para cambiar entre modos de visualización
+- **Diseño Elegante**: Estética minimalista con tipografía serif (Playfair Display)
+- **Preparado para Web3**: Estructura lista para integración con thirdweb
+
+## Stack Tecnológico
+
+- **Framework**: Next.js 14+ (App Router)
+- **Lenguaje**: TypeScript
+- **Estilos**: Tailwind CSS
+- **Fuentes**: Google Fonts (Playfair Display, Inter)
+- **Estándar NFT**: ERC-1155
+
+## Instalación
 
 ```bash
+# Clonar el repositorio
+git clone https://github.com/pablofelipe01/marcelo-studio.git
+
+# Entrar al directorio
+cd marcelo-studio
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estructura del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── obra/[id]/     # Página de detalle de NFT
+│   ├── globals.css    # Estilos globales y temas
+│   ├── layout.tsx     # Layout principal
+│   └── page.tsx       # Página Home
+├── components/
+│   ├── Navbar.tsx     # Navegación con toggles
+│   ├── Footer.tsx     # Pie de página
+│   ├── NFTCard.tsx    # Card de NFT
+│   └── WalletModal.tsx # Modal de wallet
+├── context/
+│   ├── LanguageContext.tsx  # i18n
+│   ├── ThemeContext.tsx     # Tema claro/oscuro
+│   └── WalletContext.tsx    # Estado de wallet
+└── data/
+    ├── nfts.ts           # Datos de NFTs
+    └── translations.ts   # Traducciones ES/EN
+```
 
-## Learn More
+## Próximos Pasos
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] Integración con thirdweb SDK
+- [ ] Conexión real de wallet (MetaMask, WalletConnect)
+- [ ] Deploy de smart contract ERC-1155
+- [ ] Funcionalidad de compra real
+- [ ] Panel de administración
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+El proyecto está listo para deploy en [Vercel](https://vercel.com):
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Licencia
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Todos los derechos reservados © 2025 Marcelo Studio
