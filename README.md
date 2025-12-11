@@ -1,85 +1,85 @@
 # Marcelo Studio
 
-NFT Marketplace mockup para fotografía artística de Marcelo.
+NFT Marketplace mockup for Marcelo's fine art photography.
 
-## Descripción
+## Description
 
-Plataforma de coleccionables digitales que presenta una colección exclusiva de fotografía artística como NFTs en la blockchain de Ethereum. Cada pieza es una edición única certificada con el estándar ERC-1155.
+A digital collectibles platform showcasing an exclusive collection of fine art photography as NFTs on the Ethereum blockchain. Each piece is a unique edition certified with the ERC-1155 standard.
 
-## Características
+## Features
 
-- **Galería NFT**: Grid de obras con vista detallada de cada pieza
-- **Simulación de Wallet**: Conexión de wallet mockup con dirección simulada
-- **Internacionalización**: Soporte completo para Español e Inglés
-- **Tema Claro/Oscuro**: Toggle para cambiar entre modos de visualización
-- **Diseño Elegante**: Estética minimalista con tipografía serif (Playfair Display)
-- **Preparado para Web3**: Estructura lista para integración con thirdweb
+- **NFT Gallery**: Grid of artworks with detailed view for each piece
+- **Wallet Simulation**: Mockup wallet connection with simulated address
+- **Internationalization**: Full support for Spanish and English
+- **Light/Dark Theme**: Toggle to switch between display modes
+- **Elegant Design**: Minimalist aesthetic with serif typography (Playfair Display)
+- **Web3 Ready**: Structure prepared for thirdweb integration
 
-## Stack Tecnológico
+## Tech Stack
 
 - **Framework**: Next.js 14+ (App Router)
-- **Lenguaje**: TypeScript
-- **Estilos**: Tailwind CSS
-- **Fuentes**: Google Fonts (Playfair Display, Inter)
-- **Estándar NFT**: ERC-1155
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Fonts**: Google Fonts (Playfair Display, Inter)
+- **NFT Standard**: ERC-1155
 
-## Instalación
+## Installation
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/pablofelipe01/marcelo-studio.git
 
-# Entrar al directorio
+# Enter the directory
 cd marcelo-studio
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Iniciar servidor de desarrollo
+# Start development server
 npm run dev
 ```
 
-Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Estructura del Proyecto
+## Project Structure
 
 ```
 src/
 ├── app/
-│   ├── obra/[id]/     # Página de detalle de NFT
-│   ├── globals.css    # Estilos globales y temas
-│   ├── layout.tsx     # Layout principal
-│   └── page.tsx       # Página Home
+│   ├── obra/[id]/     # NFT detail page
+│   ├── globals.css    # Global styles and themes
+│   ├── layout.tsx     # Main layout
+│   └── page.tsx       # Home page
 ├── components/
-│   ├── Navbar.tsx     # Navegación con toggles
-│   ├── Footer.tsx     # Pie de página
-│   ├── NFTCard.tsx    # Card de NFT
-│   └── WalletModal.tsx # Modal de wallet
+│   ├── Navbar.tsx     # Navigation with toggles
+│   ├── Footer.tsx     # Footer
+│   ├── NFTCard.tsx    # NFT card component
+│   └── WalletModal.tsx # Wallet modal
 ├── context/
 │   ├── LanguageContext.tsx  # i18n
-│   ├── ThemeContext.tsx     # Tema claro/oscuro
-│   └── WalletContext.tsx    # Estado de wallet
+│   ├── ThemeContext.tsx     # Light/dark theme
+│   └── WalletContext.tsx    # Wallet state
 └── data/
-    ├── nfts.ts           # Datos de NFTs
-    └── translations.ts   # Traducciones ES/EN
+    ├── nfts.ts           # NFT data
+    └── translations.ts   # ES/EN translations
 ```
 
-## Próximos Pasos
+## Next Steps
 
-- [ ] Integración con thirdweb SDK
-- [ ] Conexión real de wallet (MetaMask, WalletConnect)
-- [ ] Deploy de smart contract ERC-1155
-- [ ] Funcionalidad de compra real
-- [ ] Panel de administración
+- [ ] thirdweb SDK integration
+- [ ] Real wallet connection (MetaMask, WalletConnect)
+- [ ] ERC-1155 smart contract deployment
+- [ ] Real purchase functionality
+- [ ] Admin dashboard
 
 ## Deploy
 
-El proyecto está listo para deploy en [Vercel](https://vercel.com):
+The project is ready to deploy on [Vercel](https://vercel.com):
 
 ```bash
 npm run build
 ```
 
-## Licencia
+## License
 
-Todos los derechos reservados © 2025 Marcelo Studio
+All rights reserved © 2025 Marcelo Studio
